@@ -15,16 +15,16 @@
   "dependencies": {
     "@tsmean/dbadapter": "^1.0.4",
     "@tsmean/router": "^1.0.3",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
     "winston": "^2.3.1",
     "winston-color": "^1.0.0"
   },
   "devDependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.32",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
     "@types/node": "^6.0.46",
     "@types/winston": "^2.3.0",
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2",
     "ts-node": "^1.6.1",
     "typescript": "^2.0.6"
   }
