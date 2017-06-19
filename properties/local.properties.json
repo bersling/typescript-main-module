@@ -1,5 +1,6 @@
 {
   "db": {
+    "type": "mongo",
     "host": "ds145220.mlab.com",
     "dbuser": "notely",
     "port": 45220,

@@ -1,15 +1,15 @@
 import * as http from 'http';
 import {log} from './logger/logger';
 import {appConfig} from './config/app-config';
-import {database} from 'tsmongo/dist/database';
-import {router} from 'tsrouter';
+import {database} from './db';
+import {router} from '@tsmean/router';
 
 // Step 1) Set & Get App Configuration
 appConfig.setAppConfig(process.argv[2] || 'local');
 
 
 // Step 2) Connect to the database
-database.connectToDatabase(appConfig.appConfig.db, (db) => {
+(<any>database()).database.connectToDatabase(appConfig.appConfig.db, (db) => {
 
   // when connected to db:
 
