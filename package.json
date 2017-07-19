@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./testall.sh",
     "start": "tsc && node dist/index.js",
-    "spec": "mocha --reporter spec --compilers ts:ts-node/register --grep ${TEST} 'src/**/*.test.ts'",
+    "spec": "$(npm bin)/mocha --reporter spec --compilers ts:ts-node/register --grep ${TEST} 'src/**/*.test.ts'",
     "lint": "tslint src/**/*.ts",
     "forever": "tsc && forever stopall && forever start dist/index.js"
   },
